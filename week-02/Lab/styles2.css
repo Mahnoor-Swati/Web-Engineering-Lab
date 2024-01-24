@@ -1,0 +1,81 @@
+body {
+    background-color: hotpink; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header  {
+    background-color: hotpink; 
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-style: initial;
+    font-size: larger;
+    margin: 20px auto; 
+
+    max-width: 1500px;
+}
+
+
+
+.box {
+    background-color: rgb(244, 244, 200); /*  background color for boxes and form */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; 
+    max-width: 1500px; 
+}
+.form-box {
+    background-color:   rgb(244, 244, 200); /* background color for the form */
+    color: black;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; 
+    max-width: 500px; 
+}
+
+#about,
+#projects,
+#contact {
+    text-align: left;
+    margin: 20px;
+}
+
+
+.box h2 ,h1 {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+button {
+    background-color: rgb(196, 144, 105);
+    color: black;
+    padding: 10px 8px;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+}
+/* ... your existing styles ... */
+
+#about img {
+    float: left;
+    max-width: 100%; /* Maintain aspect ratio while scaling */
+    margin-right: 20px;
+    max-height: 25%
+}
+
+#about .content {
+    overflow: hidden; /* Clear the float to contain the text */
+}
+
+
+
+

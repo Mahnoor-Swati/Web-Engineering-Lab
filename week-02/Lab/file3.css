@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.large-box {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    background-color: red;
+}
+
+.corner-box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+#top-left {
+    top: 0;
+    left: 0;
+}
+
+#top-right {
+    top: 0;
+    right: 0;
+}
+
+#bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+#bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+.center-box {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: blue;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px; 
+    margin-left: -50px; 
+}
