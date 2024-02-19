@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>js practice</title>
+</head>
+
+<body>
+    <script>
+        // window.alert("window alert");
+        // create an array 
+        let flowers = ['rose', 'lily', 'sunflower'];
+        console.log(flowers);
+
+        // use push method to add one item 
+        flowers.push("violet");
+        console.log(flowers);
+        // pop to remove last item 
+        flowers.pop();
+        console.log(flowers);
+        // create another array 
+        let colors = ['red', 'pink', 'blue'];
+        // concatenate two arrays 
+        let con = flowers.concat(colors);
+        console.log(con);
+        // shift function to remove first element and returns that element
+        console.log(flowers.shift());
+        // unshift function Adds one or more elements to the beginning of an array and returns the newlength of the array
+        console.log(colors.unshift('yellow', 'orange', 'green'));
+        console.log(colors);
+        // slice function: Extracts a section of an array and returns a new array
+        console.log(colors.slice(1, 5));
+
+        // splice function 
+        const originalArray = [1, 2, 3, 4, 5];
+        // Remove 2 elements starting from index 2
+        const removedElements = originalArray.splice(2, 2);
+        console.log(removedElements); // Output: [3, 4]
+        console.log(originalArray);   // Output: [1, 2, 5]
+        // adding 3 elements 
+       originalArray.splice(3, 0, 8, 9, 0);
+        console.log(originalArray); //[1, 2, 5, 8, 9, 0]
+        //Replacing elements
+        originalArray.splice(2, 2, 3, 4);
+        console.log(originalArray)
+
+        // indexOf function : Returns the first index at which a given element can be found in the array, or
+// -1 if it is not present.
+        const index=originalArray.indexOf(3)
+        if(index != -1){
+            console.log(`element is found at index ${index}`);
+        } else{
+            console.log('element not found');
+        }
+
+        // lastIndexOf(): Returns the last index at which a given element can be found in the array, or -1 if it is not present
+        let arr= [0, 1, 0, 0, 1 , 2, 3];
+        const ind=arr.lastIndexOf(1);
+        if(ind != -1){
+            console.log(`element is found at index ${ind}`);
+        } else{
+            console.log('element not found');
+        }
+
+        // includes(): Determines whether an array includes a certain element, returning true or
+// false.
+        console.log(arr.includes(9));
+
+    </script>
+</body>
+
+</html>
