@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom functions</title>
+</head>
+
+<body>
+    <script>
+        // Custom filter function
+        function customFilter(array, conditionCallback) {
+            var filteredArray = [];
+
+            for (var i = 0; i < array.length; i++) {
+                // Check if the element satisfies the condition
+                if (conditionCallback(array[i])) {
+                    // If true, add the element to the filtered array
+                    filteredArray.push(array[i]);
+                }
+            }
+
+            return filteredArray;
+        }
+
+        // Example usage:
+        var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+        // Filter even numbers
+        var evenNumbers = customFilter(numbers, function (num) {
+            return num % 4 === 0;
+        });
+
+        console.log(evenNumbers);
+        // Output: [2, 4, 6, 8, 10]
+
+
+        // Custom reduce function
+        function customReduce(array, callback, initialValue) {
+            var accumulator = initialValue !== undefined ? initialValue : array[0];
+            var startIndex = initialValue !== undefined ? 0 : 1;
+
+            for (var i = startIndex; i < array.length; i++) {
+                // Call the callback function with accumulator, current element, index, and array
+                accumulator = callback(accumulator, array[i], i, array);
+            }
+
+            return accumulator;
+        }
+
+        // Example usage:
+        var numbers = [1, 2, 3, 4];
+
+        // Using custom reduce function to find the sum of numbers
+        var sum = customReduce(numbers, function (acc, num) {
+            return acc * num;
+        }, 1);
+
+        console.log(sum);
+        // Output: 15
+
+
+    </script>
+</body>
+
+</html>
