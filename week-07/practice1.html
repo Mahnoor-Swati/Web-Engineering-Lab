@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>this is first para</p>
+    <p>this is second para</p>
+    <p>this is third para</p>
+    <p>
+    <div>
+        <p>this is first para inside div(p)</p>
+        <p>this is second para inside div(p)</p>
+        <p>this is third para inside div(p)</p>
+    </div>
+    </p>
+    <div id="container">
+        <p>this is first para inside div</p>
+        <p>this is second para inside div</p>
+        <p>this is third para inside div</p>
+        <span>this is span inside div</span>
+    </div>
+    <ol id="list">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ol>
+    <script>
+        //get elements by tag name
+        // let chang = document.getElementsByTagName('p');
+        // console.log(arr)
+        //access the fisrt p tag 
+        // chang[0].innerHTML="mahnoor"
+        // let cc = document.getElementById('container')
+        // console.log(arr)
+        // let cc = document.querySelectorAll("p")
+        // console.log(cc);
+        let cc = document.querySelectorAll("div p")
+        console.log(cc);
+
+    </script>
+</body>
+
+</html>
